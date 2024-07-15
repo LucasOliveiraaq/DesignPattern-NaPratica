@@ -32,3 +32,22 @@ O padrão **Factory** é um dos padrões de design criacionais que fornece uma i
 - **Interface:** Define a interface comum que todos os objetos criados pelo Factory devem implementar.
 - **Classe Factory:** Contém a lógica de criação de objetos e retorna uma instância do tipo apropriado.
 - **Classes Concretas:** Implementam a interface ou classe abstrata e fornecem comportamentos específicos.
+
+---
+
+# Padrão de Design Singleton
+
+O padrão de design **Singleton** é usado para garantir que uma classe tenha apenas uma única instância e para fornecer um ponto de acesso global a essa instância.
+
+## Quando Usar o Padrão Singleton 
+
+- **Gerenciamento de Recursos:** Quando precisa garantir que apenas uma instância de um recurso (como uma conexão de banco de dados) exista.
+- **Configurações Globais:** Quando precisa acessar configurações globais que devem ser consistentes em toda a aplicação.
+- **Controle de Estado:** Quando precisa garantir que uma classe mantenha um estado global consistente.
+- **Coordenação:** Quando uma única instância deve coordenar ações através do sistema.
+
+## Estrutura do Padrão Singleton
+
+- **Instância Estática Privada:** Uma variável estática que armazenará a única instância da classe.
+- **Construtor Privado:** Um construtor privado para impedir que outras classes criem instâncias diretamente.
+- **Método Estático Público:** Um método estático que fornece acesso global à instância e garante que apenas uma instância seja criada.
