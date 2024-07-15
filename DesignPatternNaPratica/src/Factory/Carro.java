@@ -1,5 +1,5 @@
 package Factory;
 
 public interface Carro {
-	void dirigir();
+	void dirigir(); 
 }
