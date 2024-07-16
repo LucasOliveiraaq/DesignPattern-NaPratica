@@ -51,3 +51,19 @@ O padrão de design **Singleton** é usado para garantir que uma classe tenha ap
 - **Instância Estática Privada:** Uma variável estática que armazenará a única instância da classe.
 - **Construtor Privado:** Um construtor privado para impedir que outras classes criem instâncias diretamente.
 - **Método Estático Público:** Um método estático que fornece acesso global à instância e garante que apenas uma instância seja criada.
+
+---
+
+# Padrão de Design Strategy
+
+O Design Pattern **Strategy** é um padrão de design comportamental que permite definir uma família de algoritmos, encapsular cada um deles e torná-los intercambiáveis. A ideia principal é permitir que o algoritmo varie independentemente dos clientes que o utilizam.
+
+## Quando Usar o Padrão Strategy
+
+- Usar o padrão Strategy é útil quando você tem várias variações de um algoritmo e quer poder trocar entre elas facilmente sem alterar o código do cliente.
+
+## Estrutura do Padrão Strategy
+
+- **Strategy:** Uma interface comum a todas as estratégias. Declara um método que todas as estratégias concretas devem implementar.
+- **ConcreteStrategy:** Implementações específicas da interface Strategy. Cada classe concreta encapsula um algoritmo particular.
+- **Context:** Mantém uma referência a um objeto Strategy e delega a execução ao objeto de estratégia referenciado. Permite alterar a estratégia em tempo de execução.
